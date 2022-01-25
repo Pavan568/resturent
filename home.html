@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>mom's taste</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  {%load static %}
+  <link rel="stylesheet" href="{%static 'C:\Users\siva krishna\demo\Scripts\resturant\static\home1.css' %}">
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" >
+
+    </script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script> 
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="react.jsx" type="text/babel"></script>
+    <link rel="stylesheet" type="text/jsx"
+    href="https://cdnjs.cloudflare.com/ajax/libs/react/18.0.0-rc.0-next-13036bfbc-20220121/umd/react.production.min.js">
+  
+  
+
+
+</head>
+
+<body>
+
+  <!--scroll top bottom buttons
+   <a href="#" class="scroll top" id="top">
+     <i class="fas fa-arrow-circle-up"></i>
+   </a>
+   <a href="#end" class="scroll bottom">
+    <i class="fas fa-arrow-circle-down"></i>
+   </a>
+  <script>
+    //Get the button 
+    var mybutton = document.getElementById("top");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+-->
+
+ 
+    
+ <!--navbar
+ <nav class="navbar" >
+  <div class="content">
+    <div class="logo">
+      <a href="#banner"><span>M</span>om's<span>T</span>aste</label></a>
+    </div>
+    <ul class="menu-list" >
+      <div class="icon cancel-btn">
+        <i class="fas fa-times"></i>
+      </div>
+      <li><a href="#banner">Home</a></li>
+      <li><a href="#About Us">About Us</a></li>
+      <li><a href="#Our Menu">Menu</a></li>
+      
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="icon menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+ 
+ </nav>
+
+ <script>
+  const body = document.querySelector("body");
+  const navbar = document.querySelector(".navbar");
+  const menuBtn = document.querySelector(".menu-btn");
+  const cancelBtn = document.querySelector(".cancel-btn");
+  menuBtn.onclick = ()=>{
+    navbar.classList.add("show");
+    menuBtn.classList.add("hide");
+    body.classList.add("disabled");
+  }
+  cancelBtn.onclick = ()=>{
+    body.classList.remove("disabled");
+    navbar.classList.remove("show");
+    menuBtn.classList.remove("hide");
+  }
+  window.onscroll = ()=>{
+    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+  }
+ 
+ </script>
+
+ 
+-->
+
+
+  <!--banner img
+  <br><br />
+  <br><br />
+  <div class="banner" id="banner">
+    <div class="content">
+      <h2>Welcome to Mom's Taste resturant</h2>
+      <p>need food and a good place to eat? Welcome to our humble place where you can eat good food peacefuuly</p>
+    </div>
+  </div>
+  <br><br />
+  
+  <br><br />
+-->
+  <!--about us
+  <div class="about" id="About Us">
+    <h2><span>A</span>bout Us</h2>
+  </div>
+  
+   <div class="about-section">
+    <img src="https://images.pexels.com/photos/687824/pexels-photo-687824.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=550"><br><br/>
+    
+      <p>Mom's Taste
+
+        Since our modest beginnings in 2012 in hyderabad Banjarahills area, Indian-roused takeout food.
+        
+        In contrast to other Indian eateries, Mom's Taste was made with the explicit expectation to appear as something else.
+        <span id="dots">...</span>
+        
+        <span id="more">We realize numerous individuals love Indian sustenance, yet a large number of them loathe or are unconscious of the regularly unfortunate fixings that make run-of-the-mill Indian nourishment taste so great.
+        Our menu highlights things that utilization the sound and fragrant flavors, however, forgets the stuffing ghee, spread, oil, and overwhelming cream.
+  
+        Mom's Taste has developed to incorporate four superb takeout areas in Toronto with additional to come sooner rather than later. Our group takes pride in the way that we can furnish our new and faithful clients with extraordinary tasting Indian-roused nourishment that is not normal for that at some other Indian eatery you visit.
+        
+        We perceive that a few people are as yet searching for the run-of-the-mill Indian nourishment, and that is fine with us. Our disclaimer is that on the off chance that youare anticipating overwhelming, slick, undesirable Indian nourishment, Mom's Taste isn't the place for you.</span></p>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+    </div>
+    
+  </div>
+
+  <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+  </script>
+-->
+
+ <!--our menu
+  <div class="about3" >
+    <h2><span>O</span>ur Menu</h2>
+  </div><br><br/>
+  <div class="text2" id="Our Menu">
+    <h2>Starters</h2>
+  </div>
+  <br><br/>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <h3>Chicken 65</h3>
+        <img src="http://4.bp.blogspot.com/-HTLyMKx16WI/UvPbSojKrnI/AAAAAAAAF7I/qq-1EU5XO7o/s1600/chicken+65-001.JPG" />
+      </div>
+      <div class="swiper-slide">
+        <h3>Chicken spring rolls</h3>
+        <img src="https://sulthansbiriyani.in/wp-content/uploads/2021/04/chicken-spring-rolls-Delicious-Indian-Non-Veg-Starters.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <h3>Fish and chicken pakora</h3>
+        <img src="https://sulthansbiriyani.in/wp-content/uploads/2021/04/Fish-and-chicken-pakora-Delicious-Indian-Non-Veg-Starters.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <h3>Chilli Prawns</h3>
+        <img src="https://sulthansbiriyani.in/wp-content/uploads/2021/04/Chilli-Prawns-Delicious-Indian-Non-Veg-Starters.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <h3>Chicken Manchurian</h3>
+        <img src="https://sulthansbiriyani.in/wp-content/uploads/2021/04/Chicken-Manchurian-Delicious-Indian-Non-Veg-Starters.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <h3> Vegetable cheese omelet</h3>
+        <img src="https://sulthansbiriyani.in/wp-content/uploads/2021/04/Vegetable-cheese-omelet-Delicious-Indian-Non-Veg-Starters.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <h3>Veg cutlet recipe</h3>
+        <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2009/08/veg-cutlet-recipe-2.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <h3>  French fries </h3>
+        <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2012/10/french-fries-homemade.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <h3> Veg gobi manchurian</h3>
+        <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2014/08/cauliflower-manchurian-recipe-4.jpg" />
+      </div>
+    </div>
+    <br><br/>
+    <div class="swiper-pagination"></div>
+  </div><br><br/>
+  <div class="text2">
+    <h2>Biryani's(non-veg)</h2>
+  </div>
+  <br><br/>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <h3>Chicken Biryani</h3>
+        <img src="https://www.awesomecuisine.com/wp-content/uploads/2007/10/Chicken-Biryani_resized.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <h3>Mutton Biryani</h3>
+        <img src="https://www.awesomecuisine.com/wp-content/uploads/2007/11/mutton_biryani-585x390.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <h3>Hyderabadi Mutton Biryani</h3>
+        <img src="https://www.awesomecuisine.com/wp-content/uploads/2010/01/hyderabadi_mutton_biryani_recipe-.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <h3>Kaima Biryani</h3>
+        <img src="https://www.awesomecuisine.com/wp-content/uploads/2014/01/keema-Biryani.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <h3>Mughal Biryani</h3>
+        <img src="http://www.awesomecuisine.com/wp-content/uploads/2014/01/mughal_biryani.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <h3> Chicken Mint Pulao</h3>
+        <img src="https://www.awesomecuisine.com/wp-content/uploads/2012/11/Mint-Pulao-1024x576.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <h3>Lamb Biryani</h3>
+        <img src="http://www.awesomecuisine.com/wp-content/uploads/2014/05/lamb_biryani.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <h3>  Coconut Shrimp Biryani </h3>
+        <img src="http://www.awesomecuisine.com/content_images/1/coconut_shrimp_biriyani.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <h3> Awadhi Dum Biryani</h3>
+        <img src="http://www.awesomecuisine.com/content_images/1/awadhi_lucknow_biryani.jpg" />
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <br><br/>
+  <div class="text2">
+    <h2>Curry's(non-veg)</h2>
+  </div>
+  <br><br/>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <h3> Butter Chicken </h3>
+        <img src="https://i.ndtvimg.com/i/2018-01/butter-chicken_620x350_51517373579.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <h3>Kadai Chicken</h3>
+        <img src="https://c.ndtvimg.com/2020-06/f0jer1ag_chicken_625x300_05_June_20.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <h3>Chicken Chettinad</h3>
+        <img src="https://c.ndtvimg.com/2020-01/1vs5d2kg_chettinad_625x300_21_January_20.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <h3> Laal Maas</h3>
+        <img src="https://c.ndtvimg.com/2020-05/g8e7cqsg_laal-maas_625x300_27_May_20.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <h3>Mutton Kofte</h3>
+        <img src="https://c.ndtvimg.com/2020-05/k9d9lch8_kofte_625x300_20_May_20.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <h3> Rogan Josh</h3>
+        <img src="https://c.ndtvimg.com/2020-04/57s668n8_rogan-josh_625x300_16_April_20.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <h3>Chepala Iguru (Andhra Fish Curry)</h3>
+        <img src="https://c.ndtvimg.com/2020-06/23r463u_andhra-fish_625x300_20_June_20.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <h3>  Machcha Besarou </h3>
+        <img src="https://c.ndtvimg.com/2020-06/e632jt6o_fish_625x300_20_June_20.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <h3> Malabari Prawn Curry</h3>
+        <img src="https://c.ndtvimg.com/2018-09/vvp151m8_prawn-curry_625x300_12_September_18.jpg" />
+      </div>
+    </div>
+    <br><br/>
+    <div class="swiper-pagination"></div>
+  </div>
+  <br><br/>
+
+  <div class="text2">
+    <h2>VEG Items</h2>
+  </div>
+  <br><br/>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <h3> Veg Biryani </h3>
+        <img src="https://images.pexels.com/photos/9738983/pexels-photo-9738983.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+      </div>
+      <div class="swiper-slide">
+        <h3>Egg Biryani</h3>
+        <img src="https://i1.wp.com/www.relishthebite.com/wp-content/uploads/2015/02/EGgBiryani-2.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <h3>Jeera Rice</h3>
+        <img src="https://www.rasoimenu.com/wp-content/uploads/2017/09/jeera-rice-recipe-by-rasoi-menu.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <h3> roti with panner curry</h3>
+        <img src="https://thumbs.dreamstime.com/z/shahi-paneer-punjabi-curry-roti-punjabi-curry-shahi-paneer-roti-flat-bread-served-main-course-158606591.jpg" />
+      </div>
+     
+      <div class="swiper-slide">
+        <h3> rumali roti</h3>
+        <img src="http://farm3.static.flickr.com/2740/5859610161_83e1dd988e_b.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <h3>Mushroom-Biryani</h3>
+        <img src="https://i0.wp.com/www.relishthebite.com/wp-content/uploads/2015/03/Mushroom-Biryani-7.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <h3>  Mushroom-curry </h3>
+        <img src="https://www.madhuseverydayindian.com/wp-content/uploads/2020/09/mushroom-curry-mushroom-masala.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <h3> Curd-Rice</h3>
+        <img src="https://kohinoorfoods.co.uk/wp-content/uploads/2020/08/curd-rice-recipe.jpg" />
+      </div>
+    </div>
+    
+    <div class="swiper-pagination"></div>
+  </div>
+-->
+
+  <!-- Swiper JS 
+  
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+-->
+  <!-- Initialize Swiper 
+  
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+-->
+
+  <!--partners
+  <div class="about1">
+    <h2><span>P</span>artner's</h2>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/3184611/pexels-photo-3184611.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Jane" style="width:100%">
+        <div class="container">
+          <h2>Pavan</h2>
+          <p class="title">CEO & Founder</p>
+         
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Mike" style="width:100%">
+        <div class="container">
+          <h2>Anushka</h2>
+          <p class="title">Co-Founder</p>
+          
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/1121796/pexels-photo-1121796.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"  style="width:100%">
+        <div class="container">
+          <h2>Pradeep</h2>
+          <p class="title">Oraganiser</p>
+          
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+<!--food makers
+
+ <div class="about2">
+     <h2><span>O</span>ur Food Makers</h2>
+ </div>
+ <div class="food makers">
+ <div class="row">
+   <div class="column">
+     <div class="card1">
+       <img  class="cook1" src="https://thetoptenchefs.com/wp/wp-content/uploads/2016/03/Sanjeev-Kapoor.jpg"  style="text-align: center;height: fit-content;">
+       <div class="container">
+         <h2>Sanjeev Kapoor</h2>
+         <p class="title">chicken Maker</p>
+        
+         <p> Sanjeev Kapoor is the most famous and 
+           commended face as the most favorite among 
+           top 10 chefs in India. He has great name in 
+           Indian food today. He is a professional Chef, 
+           works for an effective TV Channel ‘FoodFood‘. 
+           Sanjeev Kapoor is among most popular top ten 
+           chefs in India. He is the writer of top cookbooks,
+            owner of famous restaurateur and have won many 
+            food competitions. His dream is to make Indian 
+            food the most obvious around the world and engaging Indian’s 
+           through cooking to wind up independent life.</p>
+     </div>
+   </div>
+ </div>
+ 
+   
+ <div class="column">
+     <div class="card1">
+       <img class="cook1" src="https://thetoptenchefs.com/wp/wp-content/uploads/2016/03/Vikas-Khanna.jpg"  style="width:100%">
+       <div class="container">
+         <h2>Vikas Khanna</h2>
+         <p class="title">south-indian food maker</p>
+         
+         <p>A renewed name as winning Michelin star 
+           culinary expert competition and second most popular 
+           one among top ten in India is Vikas Khanna. 
+           He is considered as the humble chef in the culinary 
+           field. He began his hourney in his grandma’s kitchen
+            in Amritsar. Khanna has worked with lot of best food 
+            experts around the globe, including Gordon Ramsey,
+             and Bobby Flay. Moreover, in New York he runs his 
+             own restaurant named “Junoon”.  Khanna’s has additionally 
+             arranged a dinner for US President Barack Obama. In 2011, he was honored
+            as ‘Sexiest Man Alive’ by People Magazine.</p>
+       </div>
+     </div>
+  </div>
+ 
+  <div class="column">
+     <div class="card1">
+       <img class="cook1" src="https://thetoptenchefs.com/wp/wp-content/uploads/2016/03/Anjum-Anand-209x300.jpg"  style="height:max-content;">
+       <div class="container">
+        <h2>Anjum Anand</h2>
+        <p class="title">veg item's expert</p>
+        <p>Anand born in Kolkata. she was first keen on music 
+         than cooking and worked as a drummer in some rock groups
+         before starting his culinary profession. She went to a 
+         cooking school in Trivandrum and worked day night to get
+         recognition as top ten chefs in India. She started 
+         working as a student with Taj Group. Anand later left 
+         the Taj Group to seek profession degree in Bangkok, 
+         wheres he started working at Red, eatery that spent 
+         time learning more Indian food.
+         She served as the primary culinary expert of 
+         Indian with Ferran Adrià’s group at el Bulli furthermore 
+         started working at different eateries in Bangkok. Anand’s 
+         was disappointing in light of the fact that the organizations 
+         “simply didn’t need anything diverse then regular meals”. 
+        .</p>
+       </div>
+       
+       
+      </div>
+    </div>
+  </div>
+
+ 
+<div class="row">
+  <div class="column">
+    <div class="card1">
+      <img  class="cook1" src="https://thetoptenchefs.com/wp/wp-content/uploads/2016/03/Madhur-Jaffrey.jpg"  style="text-align: center;height: fit-content;">
+      <div class="container">
+        <h2>Madhur Jaffrey</h2>
+        <p class="title">chicken Maker</p>
+       
+        <p> Madhur Jaffrey born in Delhi however she learnt cooking when she came to Britain in the mid-Fifties to learn at the Royal Academy of Dramatic Arts (Rada). The award winning has composed more than 15 cookbooks and is respected. Madhur lives in New York with her second husband, the prestigious American fiddler Sanford Allen, and has three grown-up little girls by her first spouse, the performer Saeed Jaffrey.
+          She is the author of many famous cooking books and thus made her place very smoothly among top ten chefs in India.
+        </p>
+    </div>
+  </div>
+</div>
+
+  
+<div class="column">
+    <div class="card1">
+      <img class="cook1" src="https://thetoptenchefs.com/wp/wp-content/uploads/2016/03/Ranveer-Brar.jpg"  style="width:100%">
+      <div class="container">
+        <h2>Ranveer Brar</h2>
+        <p class="title">biryani expert</p>
+        
+        <p>Cooking specialist Ranveer Brar is the youngest 
+          chef among top 10 chefs in India. He was an official 
+          culinary expert at 25 years old to have ever worked with a 
+          five-star in India. At present, he is the senior official 
+          culinary expert at the Novotel Mumbai, Juhu Beach. He supervising 
+          the Dosa Factory 
+          and Shalimar in Cambridge in
+           addition to Mantra in Boston.His famous show is 
+           ‘Health Bhi Taste Bhi’ on Zee Khana Khazana that presents 
+           unique and easy cooking. He shares his experiences, facts, 
+           cooking background and formulas 
+           for the happy season as top 10 chefs in India.</p>
+      </div>
+    </div>
+ </div>
+
+ <div class="column">
+    <div class="card1">
+      <img class="cook1" src="https://thetoptenchefs.com/wp/wp-content/uploads/2016/03/Harpal-Sokhi-768x512.jpg"  style="height:max-content;">
+      <div class="container">
+        <h2>Harpal Sokhi</h2>
+        <p class="title">Starters maker</p>
+       <p>Combination of Indian food with International Cuisine is the
+         thing that made Chef Harpal Singh Sokhi famous among top best
+          ten Indian chefs. He has a big name in Indian Food business.
+           With a foundation of North India, Chef Harpal is a music 
+           lover and is familiar with English and five Indian regional 
+           languages– Hindi, Punjabi, Bengali, Oriya and Telugu.
+           In 1987, Sokhi finished his degree in cooking from IHM Bhubaneswar. 
+           He began his profession as a professional cook at The Oberoi in Bhubaneswar. 
+           At 27, he turned into an official culinary specialist.</p>
+      
+      </div>
+      
+    </div>
+   </div>
+  </div>
+ </div>
+-->
+<!--customers review
+ <div class="about4">
+  <h2><span>C</span>ustomer's Says</h2>
+</div><br/>
+ <div class="cont2">
+  <div class="card2">
+    <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" >
+    
+    <div class="container3">
+     
+      <h4><b>Arjun</b></h4> 
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked1"></span>
+      <p>It’s a great experience. The ambiance is very 
+        welcoming and charming. Amazing  food and service. Staff 
+        are extremely knowledgeable and make great recommendations.</p> 
+     
+    </div>
+
+  </div>
+  <br><br/>
+  <div class="card2">
+    <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" >
+    
+    <div class="container3">
+      <h4><b>chrish</b></h4> 
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked1"></span>
+      <p>This place is great! Atmosphere is chill and 
+        cool but the staff is also really friendly. 
+        They know what they’re doing and what they’re talking about,
+        and you can tell making the customers happy is their
+         main priority. Food is pretty good, some italian classics 
+        and some twists, and for their prices it’s 100% worth it.</p> 
+    </div>
+   
+   
+  </div>
+  <br><br/>
+  <div class="card2">
+    <img src="https://images.pexels.com/photos/1686197/pexels-photo-1686197.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" >
+    
+    <div class="container3">
+      <h4><b>Priyanka</b></h4> 
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked1"></span>
+      <p>This spot gives extraordinary service and yummy meals. One of my favourite restaurants around town. The meals served rapidly and the rates were reasonable. Highly recommended..</p> 
+    </div>
+   
+   
+  </div>
+  <br><br/>
+  <div class="card2">
+    <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" >
+    
+    <div class="container3">
+      <h4><b>Maithili</b></h4> 
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked1"></span>
+      <p>Delicious food, waiters are very attentive,
+         and super nice atmosphere. Plus it’s all at an affordable price.
+        Can totally recommend it and will definitely come back again.</p> 
+    </div>
+   
+   
+  </div>
+
+  <br><br/>
+  <div class="card2">
+    <img src="https://images.pexels.com/photos/1306557/pexels-photo-1306557.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" >
+    
+    <div class="container3">
+      <h4><b>Divya</b></h4> 
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <p> Amazing experience! If you thought gourmet kitchen will leave you hungry, think again.
+         You should skip several meals before visiting this amazing restaurant. 
+         Everything is so tasty,
+         you cannot restraint yourself from having all of the dishes..</p> 
+    </div>
+   
+   
+  </div>
+-->
+  <!--div for scrool end
+  <div id="end"></div>
+ </div>
+
+ <div class="contact" id="contact">
+  <div class="titletxt">
+    <h2><span>C</span>ontact Us</h2>
+    
+  </div><br/>
+  <form action="" method="POST" class="contactform">
+    {% csrf_token %}
+
+    <img src="http://microteltechnology.com/wp-content/uploads/2017/09/call-center-agent-960x640.jpg">
+    <h3>send your message</h3>
+   <div class="inputcard">
+     
+    <div class="inputbox">
+      <input type="text" placeholder="name" name="name">
+      
+    </div>
+    <div class="inputbox">
+      <input type="email" placeholder="email" name="email">
+      
+    </div>
+    <div class="inputbox">
+     <textarea placeholder="message" name="message"></textarea>
+      
+    </div>
+    <div class="inputbox">
+      <input type="submit" class="btn submit-btn" value="send"></div>
+    </div>
+  </form>
+
+ </div>
+ 
+
+  <br><br />
+-->
+
+  <!--footer
+  <div class="footer">
+    <div class="container2">
+      <div class="row">
+        <div class="footer-col">
+          <h4>location</h4>
+          <P>#1-317</P>
+          <p>ABC Nagar</p>
+          <p>Banjarahills</p>
+          <p>Hyderabad-500034</p>
+
+        </div>
+        <div class="footer-col">
+          <h4>Get Help</h4>
+
+          <P><a href="#">FAQ's</P></a>
+          <p><a href="#contact">Contact Us</p></a>
+
+
+        </div>
+        <div class="footer-col">
+          <h4>Enquiry</h4>
+          <p>email<a href="#">mom'staste@gmail.com</a></p>
+          <p>+91 1234213578</p>
+        </div>
+        <div class="footer-col">
+          <h4>Fallow us</h4>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+
+        </div>
+        <div class="copyr">
+          <p>copyrignt &#169; 2022 <span>mom's taste</span> .All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="drag">
+    <img src="http://microteltechnology.com/wp-content/uploads/2017/09/call-center-agent-960x640.jpg">
+    <p>fallow me</p>
+  </div>
+  <script>
+    $(function(){
+      $("#drag").draggable();
+    });
+    
+  </script>
+
+</body>
+
+</html>
+
+-->
+
+<div id="content"></div>
